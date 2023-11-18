@@ -1,0 +1,22 @@
+{
+  // 
+  // Stylelint (stylelint.vscode-stylelint)
+  // 
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  //
+  // Prettier (esbenp.prettier-vscode)
+  //
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Prettier will wrap lines longer than 80 characters.
+  "editor.rulers": [
+    80
+  ]
+}

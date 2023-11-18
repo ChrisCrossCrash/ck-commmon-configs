@@ -1,0 +1,10 @@
+# This file provides a few nice-to-have defaults for ESLint. However, you'll
+# likely have to customize this file or merge it with an existing config to fit
+# your project's needs, especially if your project uses TypeScript.
+
+root: true
+extends:
+  - eslint:recommended
+  - prettier
+ignorePatterns:
+  - dist
