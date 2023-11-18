@@ -7,6 +7,54 @@
       "name": "Launch Microsoft Edge against localhost",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Next.js: debug server-side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/<node_internals>/**",
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/.next/**"
+      ]
+    },
+    {
+      "name": "test - coverage",
+      "type": "python",
+      "request": "launch",
+      "module": "coverage",
+      "args": [
+        "run",
+        "--source='${workspaceFolder}'",
+        "manage.py",
+        "test"
+      ]
+    },
+    {
+      "name": "testserver",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": [
+        "testserver",
+        "${workspaceFolder}/test_fixture.json",
+        "--addrport",
+        "0.0.0.0:8000"
+      ],
+      "django": true
+    },
+    {
+      "name": "test",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": [
+        "test"
+      ],
+      "django": true
     }
   ]
 }
